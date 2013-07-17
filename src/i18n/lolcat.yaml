@@ -3,7 +3,7 @@ _name: "Lolcat"
 home:
   hello: > # HTML and bootstrap classes allowed. Won't be escaped !!!
     <h1>HAY I IZ PIRATBOX
-      U CAN HAZ <a href="#files">MY FILZ</a> OR <a href="#upload">FEED ME URS</a> SOMETHNG.
+      U CAN HAZ <a href="#files">MY FILZ</a> OR <a href="#upload">FEED ME</a> FILZ NOMS.
     </h1>
   announce: > # HTML and bootstrap classes allowed. Won't be escaped !!!
     HEY HAY
@@ -13,7 +13,7 @@ files:
   uploaded : "Date"
 upload:
   title: "ADD SUMTHNGS"
-  forbidden : "NAH FORBIDN."
+  forbidden : "NAH UPLOAD HERE FORBIDN ADD DIR FIRZT."
   warning : "HEY REMEMBR UR SENDNG PUBLIC NOMZ."
   selectFile : "PICK FILZ"
   changeFile : "CHNGE UR MIND"
@@ -30,4 +30,4 @@ errors:
   illegalDirName: "NO NO NO"
   noNameProvided: "WAZ TEH NAME?"
   dirExists: "ALREADY DONZ"
-serverSignature : '<a href="/">%s</a> powered by the lolcats at <a href="http://github.com/thblt/pyrate">Pyrate</a>.' # HTML and bootstrap classes allowed. Won't be escaped !!!
+serverSignature : '<a href="/" style="text-transform: uppercase;">%s</a> IZ <a href="http://github.com/thblt/pyrate">PYRATE</a>.' # HTML and bootstrap classes allowed. Won't be escaped !!!
