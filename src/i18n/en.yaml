@@ -6,22 +6,6 @@ home:
     <p class="lead">
       <a href="#files">Download</a> or <a href="#upload">upload</a> something.
     </p>
-  announce: > # HTML and bootstrap classes allowed. Won't be escaped !!!
-    <p class="lead">Hello and welcome on the UEEH PirateBox!
-    </p>
-    
-    <p> A PirateBox is a simple tool to share files with your friends. 
-      May it be movies, texts, radio broadcasts, ... you can add or download as many files you want!
-      In order to keep things clean, please send your files in the relevant directories and sub-directories.
-    </p>
-    
-    <p>In the UEEH, be it at the Crous, at the faculty or on the PirateBox, please respect the charter!
-    </p>
-    
-    <p>To learn more about the PirateBox, from the origins of the project to its relevance in the UEEH, through its detailed functionment,
-      see you at the presentation workshop that will be announced on the planning!
-      Come with your questions, remarks, issues or glitters!
-    </p>
 files:
   name: Name
   size: Size

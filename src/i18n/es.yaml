@@ -6,22 +6,6 @@ home:
     <p class="lead">
       <a href="#files">Descarga</a> o <a href="#upload">envia</a> algo.
     </p>
-  announce: > # HTML and bootstrap classes allowed. Won't be escaped !!!
-    <p class="lead">Hola, bienvenidxs a la piratebox de las UEEH!
-    </p>
-    
-    <p> Una Pirate Box es una forma sencilla de cumpartir archivos con lxs amigxs. 
-      Que sean pel&iacute;culas, textos, programas de radio, aqu&iacute; puedes agregar archivos tanto como descargarlos sin limitaciones.
-      Para que estén bien organizados, gracias por enviar los archivos en las carpetas correspondientes.
-    </p>
-    
-    <p>En las UEEH, que sea en el CROUS, en la facultad de sciencias o en la piratebox, gracias por respetar la carta de las UEEH.
-    </p>
-    
-    <p>Para mas información sobre la pirate box, desde el or&iacute;gen del proyecto a su interés para las UEEH o a detalles de su funcionamiento: est&aacute;s te esperamos al taller de presentación pronto anunciado el planning.
-    
-      Venga con tus preguntas, comentarios, problemas, lentejuelas, etc.
-    </p>
 files:
   name: Nombre
   size: Tamaño

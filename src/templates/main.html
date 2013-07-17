@@ -63,7 +63,7 @@ body {
 
 		{# HEADER #} {%if isRoot %}
 		<div class="row-fluid">
-			<div class="span3">{{s.home.announce|safe}}</div>
+			<div class="span3">{%if conf.announce[locale]%}{{conf.announce[locale]|safe}}{%else%}{{ conf.announce[conf.i18n.fallback]|safe}}{%endif%}</div>
 			<!--/span-->
 			<div class="span9">
 				<div class="hero-unit">{{s.home.hello|safe}}</div>

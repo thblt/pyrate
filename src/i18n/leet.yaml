@@ -6,22 +6,6 @@ home:
     <p class="lead">
       <a href="#files">D0wn104d</a> 0r <a href="#upload">up104d</a> $0m37h1n9.
     </p>
-  announce: > # HTML and bootstrap classes allowed. Won't be escaped !!!
-    <p class="lead">H3110 4nd w31c0me 0n 7h3 U33H P1r473B0><!
-    </p>
-    
-    <p> A PirateBox is a simple tool to share files with your friends. 
-      May it be movies, texts, radio broadcasts, ... you can add or download as many files you want!
-      In order to keep things clean, please send your files in the relevant directories and sub-directories.
-    </p>
-    
-    <p>In the UEEH, be it at the Crous, at the faculty or on the PirateBox, please respect the charter!
-    </p>
-    
-    <p>To learn more about the PirateBox, from the origins of the project to its relevance in the UEEH, through its detailed functionment,
-      see you at the presentation workshop that will be announced on the planning!
-      Come with your questions, remarks, issues or glitters!
-    </p>
 files:
   name: Name
   size: Size
