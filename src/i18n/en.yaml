@@ -13,7 +13,7 @@ files:
 upload:
   title: "Upload a new file"
   forbidden : "You cannot create any files directly in this directory. First create a sub-directory."
-  warning : "Chaque fichier que vous envoyez est visible et téléchargeable par tout le monde."
+  warning : "Files sent on this box will be visible by everyone."
   selectFile : "Choose a file"
   changeFile : "Choose another file"
   submit : "Submit"
