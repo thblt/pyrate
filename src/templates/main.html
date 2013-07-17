@@ -63,7 +63,7 @@ body {
 
 		{# HEADER #} {%if isRoot %}
 		<div class="row-fluid">
-			<div class="span3">{{s.home.announce}}</div>
+			<div class="span3">{{s.home.announce|safe}}</div>
 			<!--/span-->
 			<div class="span9">
 				<div class="hero-unit">{{s.home.hello|safe}}</div>
