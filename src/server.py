@@ -1,3 +1,5 @@
+#!/usr/bin/env python
+#-*- coding: UTF-8 -*-
 from flask import Flask, render_template, send_file, redirect, url_for, request, abort, make_response
 
 import pyrate, time, os
@@ -99,7 +101,7 @@ def favicon():
 if __name__ == '__main__':
 	pyrate.init( open( '../pyrate.yaml', 'r' ) )
 
-	app.run( debug=True )
+	app.run( debug=False, host="0.0.0.0", port=80 )
 	# from flask_frozen import Freezer
 	# frz = Freezer(app)
 	# frz.freeze()

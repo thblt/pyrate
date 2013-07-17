@@ -125,12 +125,10 @@ body {
 
 		{% if isRoot %}
 		
-		<div class="row-fluid">
+		<section id="upload"><div class="row-fluid">
 			<div class="span3"></div>
-			<section id="upload">
-				<div class="span9">{%include 'upload.part.html'%}</div>
-			</section>
-		</div>
+			<div class="span9">{%include 'upload.part.html'%}</div>
+		</div></section>
 		{% endif %}
 		
 		{% if not conf.noServerSignature %}

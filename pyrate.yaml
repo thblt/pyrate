@@ -1,5 +1,5 @@
 name: "UEEH PirateBox"
-root: "/Users/tehboii/pbox"
+root: "/var/piratebox"
 dirSetup: ".pyrate.dir"
 i18n:
   available: ['fr', 'en', 'lolcat']
@@ -7,7 +7,6 @@ i18n:
 adminPassword:
   sha1: "652a2e4c67f83b0b7c5c1e1c9c467f318c79913f"
   salt: "jdfqhkpsgheip"
-noServerSignature: False
 typeIcons:
   film:
     - avi
