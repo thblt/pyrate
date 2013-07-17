@@ -2,7 +2,7 @@ name: "UEEH PirateBox"
 root: "/var/piratebox"
 dirSetup: ".pyrate.dir"
 i18n:
-  available: ['en', 'es', 'leet', 'fr', 'lolcat']
+  available: ['en', 'es', 'fr', 'lolcat', 'leet']
   fallback : 'en'
 adminPassword:
   sha1: "652a2e4c67f83b0b7c5c1e1c9c467f318c79913f"
