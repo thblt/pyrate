@@ -135,7 +135,7 @@ body {
 		<hr/>
 		<footer class="text-center">
 			<p>
-				<small>{{s.serverSignature|safe|format(conf.name)}}</small>
+				<small>{%if conf.name[locale]%}{{s.serverSignature|safe|format(conf.name[locale])}}{%else%}{{ s.serverSignature|safe|format(conf.name[conf.i18n.fallback])}}{%endif%}</small>
 			</p>
 		</footer>
 		{% endif %}
