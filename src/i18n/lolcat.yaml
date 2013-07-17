@@ -1,8 +1,33 @@
-_name: 'Lolcat'
+_name: "Lolcat"
+
 home:
-  Hello: > 
-    <h1>
-    HAI I IZ PYRATEBX.<br /> <a href="#files">BROWZ ME</a> OR <a href="#upload">UPLOAD SOMETHING</a>\
+  hello: > # HTML and bootstrap classes allowed. Won't be escaped !!!
+    <h1>HAY I IZ PIRATBOX
+      U CAN HAZ <a href="#files">MY FILZ</a> OR <a href="#upload">FEED ME URS</a> SOMETHNG.
     </h1>
+  announce: > # HTML and bootstrap classes allowed. Won't be escaped !!!
+    HEY HAY
 files:
-  name: Nom
+  name: Namz
+  size: Fat
+  uploaded : "Date"
+upload:
+  title: "ADD SUMTHNGS"
+  forbidden : "NAH FORBIDN."
+  warning : "HEY REMEMBR UR SENDNG PUBLIC NOMZ."
+  selectFile : "PICK FILZ"
+  changeFile : "CHNGE UR MIND"
+  submit : "NOM NOM"
+mkdir:
+  title: "NIU FOLDR"
+  dirName : "NAMZ"
+  submit : "NOM NOM"
+errors:
+  fileSent: "HAY OK."
+  fileRenamed: "HAY NEW NAMZ"
+  dirCreated: "HAY OK."
+  noFileProvided: "NO NOMZ?"
+  illegalDirName: "NO NO NO"
+  noNameProvided: "WAZ TEH NAME?"
+  dirExists: "ALREADY DONZ"
+serverSignature : '<a href="/">%s</a> powered by the lolcats at <a href="http://github.com/thblt/pyrate">Pyrate</a>.' # HTML and bootstrap classes allowed. Won't be escaped !!!
