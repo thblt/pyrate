@@ -1,0 +1,63 @@
+name: "UEEH PirateBox"
+root: "/Users/tehboii/pbox"
+dirSetup: ".pyrate.dir"
+i18n:
+  available: ['fr', 'en', 'lolcat']
+  fallback : 'en'
+adminPassword:
+  sha1: "652a2e4c67f83b0b7c5c1e1c9c467f318c79913f"
+  salt: "jdfqhkpsgheip"
+noServerSignature: False
+typeIcons:
+  film:
+    - avi
+    - mpg
+    - mpeg
+    - divx
+  music:
+    - wav
+    - ogg
+    - mp3
+    - mp4
+  file: # Text documents
+    - txt
+    - doc
+    - docx
+    - md
+    - mmd
+    - html
+    - htm
+    - xhtml
+    - html5
+    - lyx
+    - texts
+  picture:
+    - jpeg
+    - jpg
+    - gif
+    - bmp
+    - png
+  certificate:
+    - crt
+    - csr
+    - pem
+  calendar:
+    - ical
+    - ics
+  tint:
+    - icc
+  book:
+    - epub
+    - mobi
+    - pdf
+  cog:
+    - app
+    - ipa
+    - exe
+    - bin
+    - sh
+    - py
+    - php
+    - perl
+    - pl
+    - dmg

@@ -1,0 +1,30 @@
+{% if dir.canUpload %}
+<form method="post" enctype="multipart/form-data" >
+	<fieldset>
+		<legend>{{s.upload.title}}</legend>
+		<span class="help-block">{{s.upload.warning}}</span>
+		<div class="fileupload fileupload-new" data-provides="fileupload">
+			<span class="btn btn-file btn-large btn-inverse">
+				<span class="fileupload-new">{{s.upload.selectFile}}</span>
+				<span class="fileupload-exists">{{s.upload.changeFile}}</span>
+				<input type="file" name="upload_file" value="ok" required />
+			</span>
+			<span class="fileupload-preview"></span>
+			<a href="#" class="close fileupload-exists" data-dismiss="fileupload" style="float: none">×</a>
+		</div>
+		<input type="hidden" name="what" value="up" />
+		<button class="btn btn-large btn-primary" type="submit">{{s.upload.submit}}</button>
+	</fieldset>
+</form>
+{%endif%}
+<form method="post" enctype="multipart/form-data" >
+	<fieldset>
+		<legend>{{s.mkdir.title}}</legend>
+		{% if not dir.canUpload %}<span class="help-block">{{s.upload.forbidden}}</span>{%endif%}
+		<div class="fileupload fileupload-new" data-provides="fileupload">
+		<input type="hidden" name="what" value="mkdir" />
+		<label for="mkdir_name">{{s.mkdir.dirName}}</label>
+		<input type="text" name="name" id="mkdir_name" required/>
+		<button class="btn btn-large btn-primary" type="submit">{{s.mkdir.submit}}</button>
+	</fieldset>
+</form>

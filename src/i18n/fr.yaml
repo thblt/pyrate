@@ -1,0 +1,34 @@
+_name: "Français"
+
+home:
+  hello: > # HTML and bootstrap classes allowed. Won't be escaped !!!
+    <h1>BONJOUR JE SUIS UNE PIRATEBOX.</h1>
+    <p class="lead">
+      <a href="#files">Téléchargez</a> ou <a href="#upload">envoyez</a> quelque chose.
+    </p>
+  announce: > # HTML and bootstrap classes allowed. Won't be escaped !!!
+    Salut, je suis une PirateBox. 
+files:
+  name: Nom
+  size: Taille
+  uploaded : "Mis en ligne"
+upload:
+  title: "Envoyer un nouveau fichier"
+  forbidden : "Vous ne pouvez pas créer de fichier directement dans ce répertoire. Créez d'abord un sous-répertoire."
+  warning : "Chaque fichier que vous envoyez est visible et téléchargeable par tout le monde."
+  selectFile : "Choisir un fichier"
+  changeFile : "Choisir un autre fichier"
+  submit : "Envoyer"
+mkdir:
+  title: "Créer un nouveau répertoire"
+  dirName : "Nom du dossier"
+  submit : "Créer"
+errors:
+  fileSent: "Fichier envoyé."
+  fileRenamed: "Fichier renommé pour éviter un doublon."
+  dirCreated: "Répertoire créé."
+  noFileProvided: "Aucun fichier envoyé…"
+  illegalDirName: "Impossible de créer ce répertoire."
+  noNameProvided: "Vous n'avez pas précisé le nom du dossier…"
+  dirExists: "Ce répertoire existe déjà"
+serverSignature : '<a href="/">%s</a> propulsé par <a href="http://github.com/thblt/pyrate">Pyrate</a>.' # HTML and bootstrap classes allowed. Won't be escaped !!!

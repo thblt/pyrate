@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Pyrate</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<!-- Le styles -->
+<style type="text/css">
+body {
+	padding-top: 60px;
+	padding-bottom: 40px;
+}
+
+.sidebar-nav {
+	padding: 9px 0;
+}
+
+@media ( max-width : 980px) {
+	/* Enable use of floated navbar text */
+	.navbar-text.pull-right {
+		float: none;
+		padding-left: 5px;
+		padding-right: 5px;
+	}
+}
+</style>
+
+<link href="{{url_for('static', filename='bootstrap/css/bootstrap.min.css')}}" rel="stylesheet" />
+<link href="{{url_for('static', filename='bootstrap/css/bootstrap-responsive.min.css')}}" rel="stylesheet">
+<link href="{{url_for('static', filename='jasny-bootstrap/css/jasny-bootstrap.min.css')}}" rel="stylesheet" />
+<link href="{{url_for('static', filename='jasny-bootstrap/css/jasny-bootstrap-responsive.min.css')}}" rel="stylesheet" />
+
+<!-- HTML5 shim, for IE6-8 support of HTML5 elements -->
+<!--[if lt IE 9]>
+      <script src="../assets/js/html5shiv.js"></script>
+    <![endif]-->
+
+</head>
+
+<body>
+	{# NAVBAR #}
+	<div class="navbar navbar-inverse navbar-fixed-top">
+		<div class="navbar-inner">
+			<div class="container-fluid">
+				<button type="button" class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+					<span class="icon-bar"></span> <span class="icon-bar"></span> <span class="icon-bar"></span>
+				</button>
+				<a class="brand" href="/">{{conf.name}}</a>
+				<div class="nav-collapse collapse">
+					<ul class="nav pull-right">
+						{% for loc in locales%}
+						<li{%if loc.active%} class="active"{%endif%}><a href="?locale={{loc.id}}">{{loc.name}}</a></li>
+						{%endfor%}
+					</ul>
+				</div>
+				<!--/.nav-collapse -->
+			</div>
+		</div>
+	</div>
+
+	<div class="container-fluid">
+
+		{# HEADER #} {%if isRoot %}
+		<div class="row-fluid">
+			<div class="span3">{{s.home.announce}}</div>
+			<!--/span-->
+			<div class="span9">
+				<div class="hero-unit">{{s.home.hello|safe}}</div>
+			</div>
+		</div>
+		{%endif%} {# FILES #}
+		<div class="row-fluid">
+			{%if isRoot%}
+			<div class="span3"></div>
+			{%endif%}
+			<div class="span9">
+			
+				{% for flash in flashes %}
+				<div class="alert alert-{{flash.level}}">
+  				<button type="button" class="close" data-dismiss="alert">&times;</button>
+  				{{flash.message|safe}}
+				</div>
+				{% endfor %}
+			
+				{% if not isRoot %}{# BREADCRUMBS #}
+				<ul class="breadcrumb">
+					<li><a href="/"><i class="icon-home"></i></a> <span class="divider">/</span></li>
+					{% for c in dir.crumbs%}
+						{% if loop.last %}
+						<li class="active">{{c}}</li>
+						{%else%}
+						<li><a href="{{'../'*loop.revindex0}}">{{c}}</a> <span class="divider">/</span></li>
+						{%endif%}
+					{%endfor%}
+				</ul>
+				{% endif %}
+				<section id="files">
+				<table class="table table-striped table-hover" data-provides="rowlink">
+					<thead>
+						<tr>
+							<td style="width: 1px;">{#icon#}</td>
+							<td>{{s.files.name}}</td>
+							<td>{{s.files.size}}</td>
+							<td>{{s.files.uploaded}}</td>
+						</tr>
+					</thead>
+					<tbody>
+					{% for file in dir.files %}
+						<tr>
+							<td><i class='icon-{{file.type}}'></i></td>
+							<td><a href="./{{file.name}}">{{file.name}}</a></td>
+							<td>{{file.size}}</td>
+							<td>{{file.date|date}}</td>
+						</tr>
+					{% endfor %}
+					</tbody>
+				</table>
+				</section>
+			</div>
+			{%if not isRoot%}
+			<div class="span3">{%include 'upload.part.html'%}</div>
+			{%endif%}
+		</div>
+
+		{% if isRoot %}
+		
+		<div class="row-fluid">
+			<div class="span3"></div>
+			<section id="upload">
+				<div class="span9">{%include 'upload.part.html'%}</div>
+			</section>
+		</div>
+		{% endif %}
+		
+		{% if not conf.noServerSignature %}
+		<hr/>
+		<footer class="text-center">
+			<p>
+				<small>{{s.serverSignature|safe|format(conf.name)}}</small>
+			</p>
+		</footer>
+		{% endif %}
+	</div>
+	<!--/.fluid-container-->
+
+	<script src="{{ url_for('static', filename='jquery.js')}}"></script>
+	<script src="{{ url_for('static', filename='bootstrap/js/bootstrap.js')}}"></script>
+	<script src="{{ url_for('static', filename='jasny-bootstrap/js/jasny-bootstrap.min.js')}}"></script>
+
+</body>
+</html>

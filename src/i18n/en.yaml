@@ -1,0 +1,9 @@
+_name: 'English'
+home:
+  Hello: > 
+    <h1>
+    HAI I IZ PYRATEBX.<br /> <a href="#files">BROWZ ME</a> OR <a href="#upload">UPLOAD SOMETHING</a>\
+    </h1>
+files:
+  name: Nom
+  
