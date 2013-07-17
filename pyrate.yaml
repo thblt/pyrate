@@ -1,4 +1,7 @@
-name: "UEEH PirateBox"
+name: 
+  fr: "PirateBox UEEH"
+  en: "UEEH PirateBox"
+  es: "UEEH PirateBox"
 announce:
   fr: > # HTML and bootstrap classes allowed. Won't be escaped !!!
     <p class="lead">Bonjour et bienvenue sur la PirateBox des UEEH!</p>

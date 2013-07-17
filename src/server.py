@@ -101,7 +101,7 @@ def favicon():
 if __name__ == '__main__':
 	pyrate.init( open( '../pyrate.yaml', 'r' ) )
 
-	app.run( debug=True, host="0.0.0.0", port=80 )
+	app.run( debug=False, host="0.0.0.0", port=80 )
 	# from flask_frozen import Freezer
 	# frz = Freezer(app)
 	# frz.freeze()
