@@ -61,14 +61,12 @@ def acceptDir( path, name ):
 
 def sanitizeName( name ):
 	""" Returns a valid file name out of anything """
-	if not name:
-		raise Exception( "Empty name" )
 
 	while name in reservedNames: name = {'_{0}'.format( name )}
 
 	name = secure_filename( name )
 	
-	return name
+	return name if name else None
 
 def exposeFile( path ):
 	path = os.path.abspath( path )
