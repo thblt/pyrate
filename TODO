@@ -1,0 +1,10 @@
+Pyrate todo
+-----------
+
+1. Add a configuration setting to give up root privileges (required to start on 80) after server is initialized.
+2. Improve upload speed, currently much faster and less-CPU eating using ssh than Pyrate.  
+3. Implement running over lighttpd (*May* fix #2)
+4. Implement sorting on file displays
+5. Add a configuration option to sort folders first
+6. Provide identification of file type (use .phone-hidden)
+
