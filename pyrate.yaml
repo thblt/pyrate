@@ -1,7 +1,7 @@
 name: 
-  fr: "PirateBox UEEH"
-  en: "UEEH PirateBox"
-  es: "UEEH PirateBox"
+  fr: "PirateBox queer et féministe"
+  en: "Queer and Feminist PirateBox"
+  es: "PirateBox queer y feminista"
 announce:
   fr: > # HTML and bootstrap classes allowed. Won't be escaped !!!
     <p class="lead">Bonjour et bienvenue sur la PirateBox des UEEH!</p>
@@ -11,29 +11,23 @@ announce:
       Afin de garder un peu de clarté, merci d'envoyer vos fichiers dans les dossiers et sous-dossiers correspondants.
     </p>
     
-    <p>Aux UEEH, que ce soit au Crous, à la Fac de Sciences ou sur la PirateBox, merci de respecter la charte!
+    <p>Cette PirateBox queer et féministe a été présentée aux UEEH, les Universités d'Etté Euroméditerranéennes des Homosexualités.
+      Cela nous a permis d'aborder les notions de partage et de militantisme geeks / hackers / pirates au sein des milieux trans-pédé-gouines féministes.
+      Nous avons porté ce projet, parce que nous pensons que ces communautés ont des choses à s'apprendre et gagneraient à militer ensemble (comme se fut le cas contre ACTA par exemple).
     </p>
     
-    <p>Pour en savoir plus sur la PirateBox, de l'historique du projet à sa pertinence aux UEEH en passant par son fonctionnement détaillé,
-      rendez-vous à l'atelier de présentation qui sera annoncé sur le planning!
-      Venez avec vos questions, remarques, problèmes ou paillettes!
-    </p>
   es: > # HTML and bootstrap classes allowed. Won't be escaped !!!
-    <p class="lead">Hola, bienvenidxs a la piratebox de las UEEH!
+    <p class="lead">Hola, bienvenidxs a la PirateBox de las UEEH!
     </p>
     
-    <p> Una Pirate Box es una forma sencilla de cumpartir archivos con lxs amigxs. 
+    <p> Una PirateBox es una forma sencilla de cumpartir archivos con lxs amigxs. 
       Que sean pel&iacute;culas, textos, programas de radio, aqu&iacute; puedes agregar archivos tanto como descargarlos sin limitaciones.
       Para que estén bien organizados, gracias por enviar los archivos en las carpetas correspondientes.
     </p>
-    
-    <p>En las UEEH, que sea en el CROUS, en la facultad de sciencias o en la piratebox, gracias por respetar la carta de las UEEH.
+
+    <p>Hables espanol? Por favor ayudar me por hacer la traducion!
     </p>
-    
-    <p>Para mas información sobre la pirate box, desde el or&iacute;gen del proyecto a su interés para las UEEH o a detalles de su funcionamiento: est&aacute;s te esperamos al taller de presentación pronto anunciado el planning.
-    
-      Venga con tus preguntas, comentarios, problemas, lentejuelas, etc.
-    </p>
+
   en: > # HTML and bootstrap cloasses allowed. Won't be escaped !!!
     <p class="lead">Hello and welcome on the UEEH PirateBox!
     </p>
@@ -43,13 +37,11 @@ announce:
       In order to keep things clean, please send your files in the relevant directories and sub-directories.
     </p>
     
-    <p>In the UEEH, be it at the Crous, at the faculty or on the PirateBox, please respect the charter!
+    <p>This queer and feminist PirateBox was presented in the UEEH, the Euromediterrannean Summer Schools of Homosexualities.
+      It allowed us to introduce the concepts of sharing and geek / hacker / pirate activism into the queer feminist circles.
+      We did this project, because we believe that those communities have things to learn from each other, and would benefit from doing activism together (such as what happened against ACTA for instance).
     </p>
     
-    <p>To learn more about the PirateBox, from the origins of the project to its relevance in the UEEH, through its detailed functionment,
-      see you at the presentation workshop that will be announced on the planning!
-      Come with your questions, remarks, issues or glitters!
-    </p>
 root: "/var/piratebox"
 dirSetup: ".pyrate.dir"
 i18n:

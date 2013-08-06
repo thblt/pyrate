@@ -2,31 +2,32 @@ _name: "1337"
 
 home:
   hello: > # HTML and bootstrap classes allowed. Won't be escaped !!!
-    <h1>H1, 1'M 4 P1R473B0><.</h1>
+    <h1>|-|1, 1'M 4 |°1|247380><.</h1>
     <p class="lead">
-      <a href="#files">D0wn104d</a> 0r <a href="#upload">up104d</a> $0m37h1n9.
+      <a href="#files">D0\/\/|\|104d</a> 0|2 <a href="#upload">u|°104d</a> $0m37h1|\|9.
     </p>
 files:
-  name: Name
-  size: Size
-  uploaded : "Uploaded"
+  name: "|\|4m3"
+  size: "5123"
+  uploaded : "U|°104d3d"
 upload:
-  title: "Upload a new file"
-  forbidden : "You cannot create any files directly in this directory. First create a sub-directory."
-  warning : "Chaque fichier que vous envoyez est visible et téléchargeable par tout le monde."
-  selectFile : "Choose a file"
-  changeFile : "Choose another file"
-  submit : "Submit"
+  title: "U|°104d 4 |\|3\/\/ |=113"
+  forbidden : "U c4|\||\|07 c|23473 4|\|`/ |=1135 d1|23c71`/ 1|\| 7|-|15 d1|23c70|2`/. |=1|257 c|23473 4 5ub-d1|23c70|2`/."
+  warning : "3\/3|2`/ |=113 U 53|\|d 15 \/151b13 4|\|d d0\/\/|\|104d4b13 b`/ 3\/3|2`/0|\|3."
+  selectFile : "C|-|0053 4 |=113"
+  changeFile : "C|-|0053 4|\|07h3|2 |=113"
+  submit : "5ubm17"
 mkdir:
-  title: "Create a new directory"
-  dirName : "Directory name"
-  submit : "Create"
+  title: "C|23473 4 |\|3\/\/ d1|23c70|2`/"
+  dirName : "D1|23c70|2`/ |\|4m3"
+  submit : "C|23473"
 errors:
-  fileSent: "File Sent."
-  fileRenamed: "File renamed1."
-  dirCreated: "Directory created."
-  noFileProvided: "No file submited…"
-  illegalDirName: "Unable to create this directory."
-  noNameProvided: "You didn't state the name of the directory…"
-  dirExists: "This directory already exists"
-serverSignature : '<a href="/">%s</a> powered by <a href="http://github.com/thblt/pyrate">Pyrate</a>.' # HTML and bootstrap classes allowed. Won't be escaped !!!
+  fileSent: "|=113 53|\|7."
+  fileRenamed: "|=113 |23|\|4m3d."
+  dirCreated: "D1|23c70|2`/ c|23473d."
+  noFileProvided: "|\|0 |=113 5ubm173d…"
+  illegalDirName: "U|\|4b13 70 c|23473 7|-|15 d1|23c70|2`/."
+  noNameProvided: "U d1d|\|'7 57473 73h |\|4m3 0|= 73h d1|23c70|2`/…"
+  dirExists: "7|-|15 d1|23c70|2`/ 41|234d`/ 3><1575"
+serverSignature : '<a href="/">%s</a> |°0\/\/3|23d b`/ <a href="http://github.com/thblt/pyrate">Pyrate</a>.' # HTML and bootstrap classes allowed. Won't be escaped !!!
+

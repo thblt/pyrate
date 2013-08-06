@@ -42,7 +42,16 @@ def readPath( relativePath, listFiles=True ):
 						if ext in exts:
 							entry['type'] = type_
 							break;
-				entry['size'] = os.stat(os.path.join(path, file)).st_size
+				size = os.stat(os.path.join(path, file)).st_size
+				if size > 1024*1024*1024:
+					hsize = "{0} Gb".format(size/(1024*1024*1024))
+				elif size > 1024*1024:
+					hsize = "{0} Mb".format(size/(1024*1024))
+				elif size > 2048:
+					hsize = "{0} Kb".format(size/(1024))
+				else: hsize = str(size)
+				entry['size'] = size
+				entry['hsize'] = hsize
 				entry['date'] = os.path.getctime(os.path.join(path, file))
 				files.append( entry )
 		return {'type':'dir', 'crumbs':crumbs, 'files':files, 'canUpload': True if relativePath else False}

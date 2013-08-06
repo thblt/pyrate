@@ -45,7 +45,8 @@ def get( path=None, flashes=[] ):
 		locales.append( {'id': l, 'name': pyrate.strings[l]['_name'], 'active':True if l == locale else False} )
 
 
-	if point['type'] == 'dir':
+	if not point: return redirect('/')
+	elif point['type'] == 'dir':
 		resp = make_response( render_template( 'main.html', isRoot=isRoot, path=path, dir=point, conf=pyrate.conf, s=strings, locales=locales, locale=locale, flashes=flashes ) )
 		if setLocaleCookie: resp.set_cookie( 'locale', locale )
 		return resp
@@ -101,7 +102,7 @@ def favicon():
 if __name__ == '__main__':
 	pyrate.init( open( '../pyrate.yaml', 'r' ) )
 
-	app.run( debug=False, host="0.0.0.0", port=80 )
+	app.run( debug=False, host="0.0.0.0", port=80, threaded=True ) # processes=20) # threaded=True
 	# from flask_frozen import Freezer
 	# frz = Freezer(app)
 	# frz.freeze()

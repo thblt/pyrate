@@ -1,3 +1,4 @@
+#!/usr/bin/env python
 # Script from
 # http://code.activestate.com/recipes/491264-mini-fake-dns-server/
 # Unknown licence. 
@@ -30,7 +31,7 @@ class DNSQuery:
     return packet
 
 if __name__ == '__main__':
-  ip='192.168.1.1'
+  ip='192.168.1.13'
   print 'pyminifakeDNS:: dom.query. 60 IN A %s' % ip
   
   udps = socket.socket(socket.AF_INET, socket.SOCK_DGRAM)
@@ -41,7 +42,7 @@ if __name__ == '__main__':
       data, addr = udps.recvfrom(1024)
       p=DNSQuery(data)
       udps.sendto(p.respuesta(ip), addr)
-      print 'Respuesta: %s -> %s' % (p.dominio, ip)
+      print 'Responding: %s -> %s' % (p.dominio, ip)
   except KeyboardInterrupt:
-    print 'Finalizando'
+    print 'Exiting'
     udps.close()

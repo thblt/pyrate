@@ -102,7 +102,7 @@ body {
 							<td style="width: 1px;">{#icon#}</td>
 							<td>{{s.files.name}}</td>
 							<td>{{s.files.size}}</td>
-							<td>{{s.files.uploaded}}</td>
+							{#<td>{{s.files.uploaded}}</td>#}
 						</tr>
 					</thead>
 					<tbody>
@@ -110,8 +110,8 @@ body {
 						<tr>
 							<td><i class='icon-{{file.type}}'></i></td>
 							<td><a href="./{{file.name}}">{{file.name}}</a></td>
-							<td>{{file.size}}</td>
-							<td>{{file.date|date}}</td>
+							<td>{{file.hsize}}</td>
+							{#<td>{{file.date|date}}</td>#}
 						</tr>
 					{% endfor %}
 					</tbody>
